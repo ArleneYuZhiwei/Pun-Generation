@@ -23,7 +23,8 @@ And get the dealt_first_part_file.
     --inference_output_file=second_part_file>output2.txt 2>&1 &
     
 4. Cconcatenate the dealt_first_part_file and the second_part_file.
-
+Note: If you are interested in Highlight model, please pay attention to 
+Line 616-617 in NewBeamSearch_sample.py.
 # BibTex
     @inproceedings{yu2018neural,
       title={A Neural Approach to Pun Generation},
