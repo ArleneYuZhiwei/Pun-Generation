@@ -25,11 +25,10 @@ And get the dealt_first_part_file.
     --inference_input_file=dealt_first_part_file \
     --inference_output_file=second_part_file>output2.txt 2>&1 &
     
-    
-4. Cconcatenate the dealt_first_part_file and the second_part_file.
+4. Concatenate the dealt_first_part_file and the second_part_file.
 
 # Notice
-In common cases, we recommend the Joint Model.
+In common cases, we recommend the **Joint Model**.
 
 If you are interested in Highlight model, please have a Look at **NewBeamSearch_sample.py**. 
 
