@@ -6,21 +6,25 @@ https://github.com/tensorflow/nmt
 
 `tf 1.4.1` is required
 # Usage
+
 1.nohup python -u -m nmt.nmt \
-    --infer_batch_size= \
-    --out_dir= backward_model_path \
+    --infer_batch_size=your_batch_size \
+    --out_dir=backward_model_path \
     --inference_input_file=sample_17\
     --inference_output_file=first_part_file>output1.txt 2>&1 &
-    
+   
+   
 2.you need to deal with the first_part_file and reverse the generated sentences. 
 For example: Transfer the "newa06 a # in  7.0129895" into "in # a newa06".  
 And get the dealt_first_part_file.
 
+
 3.nohup python -u -m nmt.nmt \
-    --infer_batch_size=  \
+    --infer_batch_size=your_batch_size \
     --out_dir=forward_model_path \
-    --inference_input_file=dealt_first_part_file\
+    --inference_input_file=dealt_first_part_file \
     --inference_output_file=second_part_file>output2.txt 2>&1 &
+    
     
 4. Cconcatenate the dealt_first_part_file and the second_part_file.
 
