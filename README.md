@@ -36,7 +36,7 @@ If you are interested in Highlight model, please have a Look at **NewBeamSearch_
 
 - Use your inputs for test phase to replace TEST_INPUT in Line 871.
 
-In our case, we use the pseudo-word in [2017 Semeval task 7](http://alt.qcri.org/semeval2017/task7/) as inputs.
+  In our case, we use the pseudo-word in [2017 Semeval task 7](http://alt.qcri.org/semeval2017/task7/) as inputs.
 
 For example：
 
