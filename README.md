@@ -32,11 +32,11 @@ In common cases, we recommend the **Joint Model**.
 
 If you are interested in Highlight model, please have a Look at **NewBeamSearch_sample.py**. 
 
-- You need to set k>5 in Line 616 and detele the commentary symbol "#" in Line 617.
+(1)You need to set k>5 in Line 616 and detele the commentary symbol "#" in Line 617.
 
-- Use your inputs for test phase to replace TEST_INPUT in Line 871.
+(2)Use your inputs for test phase to replace TEST_INPUT in Line 871.
 
-  In our case, we use the pseudo-word in [2017 Semeval task 7](http://alt.qcri.org/semeval2017/task7/) as inputs.
+(3)In our case, we use the pseudo-word in [2017 Semeval task 7](http://alt.qcri.org/semeval2017/task7/) as inputs.
 
 For example：
 
@@ -44,9 +44,9 @@ plantn03
 
 plantn02
 
-- Use your [vocab file](https://github.com/tensorflow/nmt/blob/master/nmt/testdata/test_infer_vocab.src) to replace VOCABULARY in Line 879.
+(4)Use your [vocab file](https://github.com/tensorflow/nmt/blob/master/nmt/testdata/test_infer_vocab.src) to replace VOCABULARY in Line 879.
 
-- Use PMI scores of words in your corpus to replace PMI.
+(5)Use PMI scores of words in your corpus to replace PMI.
 
 The format is:
 
