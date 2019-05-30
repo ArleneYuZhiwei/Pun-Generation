@@ -24,9 +24,23 @@ And get the dealt_first_part_file.
     
 4. Cconcatenate the dealt_first_part_file and the second_part_file.
 
-Note: If you are interested in Highlight model, please pay attention to 
-Line 616-617 in NewBeamSearch_sample.py. 
+# Notice
 In common cases, we recommend the Joint Model.
+If you are interested in Highlight model, 
+Have a Look at NewBeamSearch_sample.py. 
+1.You need to set k>5 in Line 616 and detele the commentary symbol "#" in Line 617.
+2.Use your inputs for test phase to replace TEST_INPUT in Line 871.
+In our case, we use the pseudo-word in [2017 Semeval task 7](http://alt.qcri.org/semeval2017/task7/) as inputs.
+For example：
+plantn03
+plantn02
+3.Use your [vocab file](https://github.com/tensorflow/nmt/blob/master/nmt/testdata/test_infer_vocab.src) to replace VOCABULARY in Line 879.
+4.Use PMI scores of words in your corpus to replace PMI.
+The format is:
+**pseudo-word**\t**associative-word1 associative-word2...**\t**PMI-score1 PMI-score2...**  
+
+ 
+
 # BibTex
     @inproceedings{yu2018neural,
       title={A Neural Approach to Pun Generation},
