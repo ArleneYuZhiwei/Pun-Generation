@@ -36,7 +36,7 @@ If you are interested in **Highlight model**, please have a Look at **NewBeamSea
 
 (2)Use your inputs for test phase to replace TEST_INPUT in Line 871.
 
-(3)In our case, we use the pseudo-word in [2017 Semeval task 7](http://alt.qcri.org/semeval2017/task7/) as inputs.
+In our case, we use the pseudo-word in [2017 Semeval task 7](http://alt.qcri.org/semeval2017/task7/) as inputs.
 
 For example：
 
@@ -44,9 +44,9 @@ plantn03
 
 plantn02
 
-(4)Use your [vocab file](https://github.com/tensorflow/nmt/blob/master/nmt/testdata/test_infer_vocab.src) to replace VOCABULARY in Line 879.
+(3)Use your [vocab file](https://github.com/tensorflow/nmt/blob/master/nmt/testdata/test_infer_vocab.src) to replace VOCABULARY in Line 879.
 
-(5)Use PMI scores of words in your corpus to replace PMI.
+(4)Use PMI scores of words in your corpus to replace PMI.
 
 The format is:
 
