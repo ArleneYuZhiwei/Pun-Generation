@@ -7,30 +7,30 @@ https://github.com/tensorflow/nmt
 `tf 1.4.1` is required
 # Usage
 
-1.nohup python -u -m nmt.nmt \
+(1)nohup python -u -m nmt.nmt \
     --infer_batch_size=your_batch_size \
     --out_dir=backward_model_path \
     --inference_input_file=sample_17\
     --inference_output_file=first_part_file>output1.txt 2>&1 &
    
    
-2.you need to deal with the first_part_file and reverse the generated sentences. 
+(2)you need to deal with the first_part_file and reverse the generated sentences. 
 For example: Transfer the "newa06 a # in  7.0129895" into "in # a newa06".  
 And get the dealt_first_part_file.
 
 
-3.nohup python -u -m nmt.nmt \
+(3)nohup python -u -m nmt.nmt \
     --infer_batch_size=your_batch_size \
     --out_dir=forward_model_path \
     --inference_input_file=dealt_first_part_file \
     --inference_output_file=second_part_file>output2.txt 2>&1 &
     
-4.Concatenate the dealt_first_part_file and the second_part_file.
+(4)Concatenate the dealt_first_part_file and the second_part_file.
 
 # Notice
-In common cases, we recommend the **Joint Model**.
+In common cases, we recommend the **Joint Model** and you don't need any further operation.
 
-If you are interested in Highlight model, please have a Look at **NewBeamSearch_sample.py**. 
+If you are interested in **Highlight model**, please have a Look at **NewBeamSearch_sample.py**: 
 
 (1)You need to set k>5 in Line 616 and detele the commentary symbol "#" in Line 617.
 
@@ -52,6 +52,7 @@ The format is:
 
 **pseudo-word**\t**associative-word1 associative-word2...**\t**PMI-score1 PMI-score2...**  
 
+We write two models in a same file and sorry for the inconvenience above.
 
  
 
