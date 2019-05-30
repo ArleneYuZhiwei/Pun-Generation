@@ -868,7 +868,7 @@ def _tensor_gather_helper(gather_indices, gather_from, batch_size,
     return output
 def get_words():
     words=[]
-    with open('sample/sample_17','r')as fr:
+    with open('TEST_INPUT','r')as fr:
         for line in fr:
             words.append(line.decode('utf-8').strip())
     return words
@@ -876,7 +876,7 @@ def prior_scores(words):
     vocab_dict={}
     ids_list=[]
     cnt=0
-    with open('inference/final_vocab','r')as fv:
+    with open('VOCABULARY','r')as fv:
         for line in fv:
             vocab_dict[line.decode('utf-8').strip()]=cnt
             cnt+=1 
@@ -888,7 +888,7 @@ def prior_scores(words):
    
     key_word_scores={}
     #with open('inference/tags_res_withscores','r')as fr:
-    with open('inference/tags_res_PMI','r')as fr:
+    with open('PMI','r')as fr:
         for line in fr:
             try:
                 word_scores={}
